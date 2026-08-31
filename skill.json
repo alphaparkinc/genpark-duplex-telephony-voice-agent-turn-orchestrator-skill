@@ -1,0 +1,41 @@
+{
+  "name": "genpark-duplex-telephony-voice-agent-turn-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Duplex telephony voice agent turn orchestrator managing low-latency audio stream interruptions and SIP dial plans.",
+  "author": "genpark",
+  "category": "conversational-ivr",
+  "tags": [
+    "ai-phone-call",
+    "voice-agent",
+    "telephony-sip",
+    "duplex-voice",
+    "ivr-orchestrator"
+  ],
+  "inputs": {
+    "recipient_phone_e164": {
+      "type": "string"
+    },
+    "campaign_objective": {
+      "type": "string"
+    },
+    "max_turns": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "call_session_id": {
+      "type": "string"
+    },
+    "call_duration_seconds": {
+      "type": "integer"
+    },
+    "intent_resolution_status": {
+      "type": "string"
+    },
+    "call_recording_wav_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
